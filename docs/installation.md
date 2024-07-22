@@ -19,9 +19,3 @@ Go to [extensions](chrome://extensions/) page in Chrome browser.
 Turn on 'Developer mode' (in the top right corner)
 
 Click on the 'Load unpacked' button on the left right corner and choose the directory/folder where you have extracted downloaded .zip file. 
-
-
-
-
-
-
