@@ -3,20 +3,24 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  // Title for your website. Will be used in metadata and as browser tab title.
+  title: 'Highlighter.pro',
+  //
+  tagline: 'Chrome extension',
+  // favicon: 'static/img/ico/favicon.ico',
+  favicon: 'img/ico/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://highlighter.pro',
+
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'highlighter-pro', // Usually your GitHub org/username.
+  projectName: 'highlighter-pro.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -34,18 +38,25 @@ const config: Config = {
       'classic',
       {
         docs: {
+          // see
+          // https://docusaurus.io/docs/docs-introduction#docs-only-mode
+          routeBasePath: '/', // Serve the docs at the site's root
+
           sidebarPath: './sidebars.ts',
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/highlighter-pro/highlighter-pro.github.io/tree/main/',
+          showLastUpdateAuthor: false, // git username from the last commit
+          showLastUpdateTime: true, // git last commit time
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/highlighter-pro/highlighter-pro.github.io/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -56,12 +67,14 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/highlighter-green-128.png',
+
+    // Navbar
     navbar: {
-      title: 'My Site',
+      title: 'highlighter.pro',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Highlighter.pro Logo',
+        src: 'img/highlighter-green-128.png',
       },
       items: [
         {
@@ -72,61 +85,25 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/highlighter-pro/highlighter',
           label: 'GitHub',
           position: 'right',
         },
       ],
     },
+
+    // Footer
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Website last update: ${new Date().toUTCString()}`,
     },
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+
   } satisfies Preset.ThemeConfig,
 };
 

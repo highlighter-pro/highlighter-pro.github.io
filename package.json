@@ -1,6 +1,10 @@
 {
   "name": "highlighter-website",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Website for Highlighter.pro browser extension",
+  "homepage": "https://highlighter.pro",
+  "author": "Viktor Ageyev",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
