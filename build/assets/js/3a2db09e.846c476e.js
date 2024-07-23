@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhighlighter_website=self.webpackChunkhighlighter_website||[]).push([[121],{8070:e=>{e.exports=JSON.parse('{"tags":[{"label":"Updates","permalink":"/blog/tags/updates","description":"New releases, updates, bug fixes","count":2}]}')}}]);

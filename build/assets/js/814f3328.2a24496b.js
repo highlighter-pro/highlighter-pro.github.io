@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhighlighter_website=self.webpackChunkhighlighter_website||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Website created","permalink":"/blog/start","unlisted":false}]}')}}]);

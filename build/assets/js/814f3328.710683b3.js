@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhighlighter_website=self.webpackChunkhighlighter_website||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Why and how it was written","permalink":"/blog/2024/07/23/why-and-how-it-was-written","unlisted":false},{"title":"Website created","permalink":"/blog/start","unlisted":false}]}')}}]);

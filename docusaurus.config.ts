@@ -57,9 +57,14 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/highlighter-pro/highlighter-pro.github.io/tree/main/',
+          showLastUpdateTime: true, // git last commit time
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        gtag: {
+          trackingID: 'G-PC2FZVPM7G',
+          anonymizeIP: false,
         },
       } satisfies Preset.Options,
     ],
@@ -84,6 +89,11 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://chromewebstore.google.com/detail/highlighterpro/gpdhplhmppgenpnkfilghnjiodfmnoap',
+          label: 'Install',
+          position: 'right',
+        },
         {
           href: 'https://github.com/highlighter-pro/highlighter',
           label: 'GitHub',
