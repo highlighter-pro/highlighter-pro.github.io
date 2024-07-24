@@ -62,7 +62,7 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -laFh # -R
 
-#      - name: Unzip artifact
+#      - name: Unzip artifact # not needed if compression-level: 0
 #        run: unzip -O UTF-8 -qq *.zip -d dir
 
       - name: Setup Pages
