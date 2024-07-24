@@ -59,6 +59,9 @@ jobs:
 #          name: docs
           name: artifact
 
+      - name: Display structure of downloaded files
+        run: ls -laFh # -R
+
       - name: Unzip artifact
         run: unzip -O UTF-8 -qq *.zip -d dir
 
