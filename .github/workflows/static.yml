@@ -62,8 +62,8 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -laFh # -R
 
-      - name: Unzip artifact
-        run: unzip -O UTF-8 -qq *.zip -d dir
+#      - name: Unzip artifact
+#        run: unzip -O UTF-8 -qq *.zip -d dir
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -71,7 +71,7 @@ jobs:
       - name: Package and upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dir
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
