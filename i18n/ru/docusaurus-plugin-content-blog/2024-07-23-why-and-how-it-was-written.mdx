@@ -1,0 +1,27 @@
+---
+title: Why and how it was written 
+authors: [ageyev]
+tags: [updates]
+---
+
+import VideoContainer from '../src/components/VideoContainer';
+
+# Why and how it was written
+
+I needed a Chrome extension to highlight text (like using a marker on paper) and to add notes to highlighted text with hyperlinks.
+
+It should have the ability to navigate through selections in large text, i.e. in the sidebar next to the web page there is a list of marked places, and you can click on an item of this list to move to the corresponding place in text. Highlighting and deleting highlights should work from the right-click menu. 
+
+And a critical (most important) requirement was that the extension has open code.
+
+In the end I wrote this by myself. The code is open sourced and posted on [GitHub](https://github.com/highlighter-pro/highlighter) and [GitLab](https://gitlab.com/highlighter-pro/highlighter) 
+
+The goal was to make the most lightweight extension that does not interfere with scripts on the page, and to use instead browser’s built-in functions as much as possible.
+
+The resulting code may serve as a good demonstration of what the "dirty hack" is :) 
+To work with selected text, I use deprecated but still supported browser functions intended for other purposes.
+
+You can see how it works on the video: 
+<VideoContainer youtubeId={"2SCs8qEbkGI"}/>
+
+

@@ -1,0 +1,9 @@
+updates:
+  label: Updates
+  permalink: /updates
+  description: New releases, updates, bug fixes
+test:
+  label: Test
+  permalink: /test
+  description: Something we post just to test some features
+

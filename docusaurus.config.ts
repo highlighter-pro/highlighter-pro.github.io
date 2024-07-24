@@ -30,7 +30,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ru'],
   },
 
   presets: [
@@ -90,6 +90,10 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+        {
           href: 'https://chromewebstore.google.com/detail/highlighterpro/gpdhplhmppgenpnkfilghnjiodfmnoap',
           label: 'Install',
           position: 'right',
@@ -105,8 +109,36 @@ const config: Config = {
     // Footer
     footer: {
       style: 'dark',
+      links: [
+        {
+          title: 'Install',
+          items: [
+            {
+              label: 'Chrome web store',
+              href: 'https://chromewebstore.google.com/detail/highlighterpro/gpdhplhmppgenpnkfilghnjiodfmnoap',
+            },
+            {
+              label: 'Source code',
+              href: 'https://github.com/highlighter-pro/highlighter/releases',
+            },
+          ],
+        },
+        {
+          title: 'Support',
+          items: [
+            {
+              label: 'Extension support',
+              href: 'https://github.com/highlighter-pro/highlighter/issues',
+            },
+            {
+              label: 'Website support',
+              href: 'https://github.com/highlighter-pro/highlighter-pro.github.io/issues',
+            },
+          ],
+        },
+      ],
       // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      copyright: `Website last update: ${new Date().toUTCString()}`,
+      // copyright: `2024, Highlighter.pro`,
     },
 
     prism: {
