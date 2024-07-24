@@ -33,6 +33,18 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
 
+      - name: Save artifact with build results
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifact
+          path: build
+          compression-level: 0
+          # If true, an artifact with a matching name will be deleted before a new one is uploaded.
+          # If false, the action will fail if an artifact for the given name already exists.
+          # Does not fail if the artifact does not exist.
+          # Optional. Default is 'false'
+          overwrite: true
+
   # see https://www.jetbrains.com/help/writerside/deploy-docs-to-github-pages.html#publish
   deploy:
     environment:
@@ -45,7 +57,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
 #          name: docs
-          name: build
+          name: artifact
 
       - name: Unzip artifact
         run: unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d dir
