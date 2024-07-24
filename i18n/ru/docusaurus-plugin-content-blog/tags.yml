@@ -1,9 +1,9 @@
-updates:
-  label: Updates
+обновления:
+  label: Обновления
   permalink: /updates
-  description: New releases, updates, bug fixes
-test:
-  label: Test
+  description: Новые версии, обновления, исправления ошибок
+тест:
+  label: Тест
   permalink: /test
-  description: Something we post just to test some features
+  description: Публикации для тестирования технических функций платформы
 

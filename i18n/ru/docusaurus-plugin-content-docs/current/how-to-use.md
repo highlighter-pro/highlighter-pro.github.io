@@ -2,16 +2,16 @@
 sidebar_position: 3
 ---
 
-# How to use 
+# Как пользоваться 
 
-## Adding highlight 
+## Добавление отметки в тексте веб-страницы
 
-Select a text on the webpage, and then use right click menu to highlight selected text. 
+Выделите текст на веб-странице, а затем используйте контекстное меню, чтобы отметить выделенный текст.
 
-## Removing highlight 
+## Удаление отметки
 
-Point to highlighted text with a cursor, open right click menu and choose 'Remove highlight'
+Наведите курсор на выделенный текст, откройте меню правой кнопкой мыши и выберите 'Remove highlight'.
 
-## Notes 
+## Примечания
 
-To add / edit / remove notes to highlights click on the extension icon - this will open the browser's side panel, where you will see list of highlights for the current page and add or edit or remove notes to highlights on this page. 
+Чтобы добавить/редактировать/удалить примечания к отметке, нажмите на значок расширения — откроется боковая панель браузера, где вы увидите список отметок для текущей страницы, а также сможете добавлять, редактировать или удалять примечания к отметкам на этой странице.

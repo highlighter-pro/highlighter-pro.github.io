@@ -2,9 +2,11 @@
 sidebar_position: 4
 ---
 
-# Backup and restore  
+# Сохранение (бэкап) и восстановление файла с данными 
 
-All your selections are stored in Chrome browser local storage. 
+Отмеченные места и заметки к ним сохраняются в локальном хранилище браузера.  
 
-You can save/backup your highlights and notes, and then restore them in the same or in the other browser with [highlighter.pro](https://chromewebstore.google.com/detail/highlighterpro/gpdhplhmppgenpnkfilghnjiodfmnoap) extension installed. 
+Все ваши отметки и записи можна сохранить в файл, который потом можно загрузить на этом же или на другом браузера с установленным расширением [highlighter.pro](https://chromewebstore.google.com/detail/highlighterpro/gpdhplhmppgenpnkfilghnjiodfmnoap) 
+
+Когда вы загружаете данные из бэкап файла, данные из него добавляются к тем, которые уже содержаться в данном браузере, не удаляя существующие, а дополняя их. 
 

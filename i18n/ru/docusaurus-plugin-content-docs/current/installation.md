@@ -2,20 +2,20 @@
 sidebar_position: 2
 ---
 
-# Installation 
+# Установка
 
-## From the Chrome Web Store  
+## Установка из интернет-магазина Chrome
 
-To install ```highlighter.pro``` from the Chrome Web Store open this [page](https://chromewebstore.google.com/detail/highlighterpro/gpdhplhmppgenpnkfilghnjiodfmnoap) and click on [Add to Chrome] button. 
+Чтобы установить ```highlighter.pro``` из интернет-магазина Chrome перейдите по этой  [ссылке](https://chromewebstore.google.com/detail/highlighterpro/gpdhplhmppgenpnkfilghnjiodfmnoap) и нажмите кнопку "Установить"(англ. "Add to Chrome").
 
-## From the code 
+## Установка из исходного кода
 
-Download the latest .zip file from the [releases](https://github.com/highlighter-pro/highlighter/releases) section for the code repo. 
+Скачайте последний релиз (файл .zip) из раздела [releases](https://github.com/highlighter-pro/highlighter/releases) в репозитории кода. 
 
-Unzip it to local folder. 
+Распакуйте файл в локальную папку. 
 
-Go to [extensions](chrome://extensions/) page in Chrome browser. 
+Перейдите в раздел [расширения](chrome://extensions/) в браузере Chrome. 
 
-Turn on 'Developer mode' (in the top right corner)
+Включите 'Developer mode' (режим разработчика) переключателем в правом верхнем углу
 
-Click on the 'Load unpacked' button on the left right corner and choose the directory/folder where you have extracted downloaded .zip file. 
+Нажмите на кнопку "Загрузить" ('Load unpacked') в левом верхнем углу и в открывшемся диалоге выберите парку, в которую вы распаковали код расширения. 

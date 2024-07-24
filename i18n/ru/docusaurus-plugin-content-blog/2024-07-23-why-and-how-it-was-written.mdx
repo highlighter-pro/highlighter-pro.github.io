@@ -1,27 +1,24 @@
 ---
 title: Why and how it was written 
 authors: [ageyev]
-tags: [updates]
+tags: [обновления]
 ---
 
 import VideoContainer from '../../../src/components/VideoContainer';
 
-# Why and how it was written
+# Для чего было написано это расширение
 
-I needed a Chrome extension to highlight text (like using a marker on paper) and to add notes to highlighted text with hyperlinks.
+Мне нужна была функция в Chrome, чтобы выделять текст (аналог маркера на бумаге) и добавлять к нему небольшие заметки, содержащие, в том числе, гиперссылки, и с возможностью навигации по выделениям в большом тексте, т.е. чтобы в боковой панели рядом с веб-страницей был список отмеченных мест и можно было кликнув по элементу этого списка переместится в соответствующее место.
 
-It should have the ability to navigate through selections in large text, i.e. in the sidebar next to the web page there is a list of marked places, and you can click on an item of this list to move to the corresponding place in text. Highlighting and deleting highlights should work from the right-click menu. 
+Так, чтобы выделение и их удаление работали из меню правой кнопки мыши. И критическим требованием был открытый код для устанавливаемого расширения.
 
-And a critical (most important) requirement was that the extension has open code.
+В итоге написал такое сам. Код открытый и выложен на GitHub и GitLab.
 
-In the end I wrote this by myself. The code is open sourced and posted on [GitHub](https://github.com/highlighter-pro/highlighter) and [GitLab](https://gitlab.com/highlighter-pro/highlighter) 
+Задача была сделать максимально легковесное приложение, которое минимально вмешивается в скрипты на странице, и максимально использует встроенные функции браузера.
 
-The goal was to make the most lightweight extension that does not interfere with scripts on the page, and to use instead browser’s built-in functions as much as possible.
+С технической стороны код служит хорошей демонстраций понятия "грязный хак" :) Для работы с выделенным текстом я использую давно устаревшие (deprecated), но все еще поддерживаемые функции браузера предназначенные для других целей.
 
-The resulting code may serve as a good demonstration of what the "dirty hack" is :) 
-To work with selected text, I use deprecated but still supported browser functions intended for other purposes.
-
-You can see how it works on the video: 
+Как работает видно на видео:
 <VideoContainer youtubeId={"2SCs8qEbkGI"}/>
 
 
